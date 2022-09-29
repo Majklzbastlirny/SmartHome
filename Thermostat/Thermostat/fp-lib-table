@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Thermostat")(type "KiCad")(uri "C:/Users/Michal/Documents/GitHub/SmartHome/Thermostat/Thermostat")(options "")(descr ""))
+)
