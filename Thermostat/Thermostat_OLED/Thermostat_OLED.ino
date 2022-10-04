@@ -23,7 +23,7 @@ int SW2time = 0;
 #define SW1 2
 bool SW1en = 0;
 int SW1time = 0;
-float ActionIdle = 0;
+double ActionIdle = 0;
 static const unsigned long idlelimit = 7500; // ms
 static unsigned long lastRefreshTime = 0;
 
@@ -50,33 +50,36 @@ char Hours[16];
 char daysOfTheWeek[7][12] = {"Ne", "Po", "Ut", "St", "Ct", "Pa", "So"};
 char months[12][12] = {"Prosinec", "Leden", "Unor", "Brezen", "Duben", "Kveten", "Cerven", "Cervenec", "Srpen", "Zari", "Rijen", "Listopad"};
 
-float requestedTEMP = 20;
+double requestedTEMP = 20;
+double MINtemp = 10;
+double MAXtemp = 26;
 int posmem;
 int DirE = 0;
 
 float count;
 float Batcount = 80021;
-float Voltage;
+double Voltage;
 int POSITION = 0;
 static int pos = 0;
 int FirstRun = 0;
-float memory;
+double memory;
 bool defaultrequest = 0;
+bool wifiless = 0;
+double EditStartTime = 0;
+
 RotaryEncoder *encoder = nullptr;
 
-IRAM_ATTR void checkPosition()
-{
-  ActionIdle = millis();
-  encoder->tick(); // just call tick() to check the state.
-  //DirE = (int)encoder->getDirection();
-}
+
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
   EEPROM.begin(16);
   encoder = new RotaryEncoder(ENCa, ENCb, RotaryEncoder::LatchMode::TWO03);
-
+  if (digitalRead(SW2) == 0) {
+    wifiless = 1;
+  }
+  else wifiless = 0;
   // register interrupt routine
   attachInterrupt(digitalPinToInterrupt(ENCa), checkPosition, CHANGE);
   attachInterrupt(digitalPinToInterrupt(ENCb), checkPosition, CHANGE);
@@ -96,9 +99,10 @@ void setup() {
   display.println("Booting up....");
   ReviveValues(0);
   display.display();
-  // wifiManager.autoConnect("Thermostat", "123456780");
-  // timeSync(TZ_INFO, "time.cloudflare.com");
-
+  if (wifiless == 0) {
+    wifiManager.autoConnect("Thermostat", "123456780");
+    timeSync(TZ_INFO, "time.cloudflare.com");
+  }
 }
 
 void loop() {
@@ -106,7 +110,7 @@ void loop() {
 
 
   count++;
-
+  attachInterrupt(digitalPinToInterrupt(SW1), BUT1, FALLING);
 
   encoder->tick();
 
@@ -116,7 +120,8 @@ void loop() {
       EditMode = 0;
       FirstRun = 0;
       encoder->setPosition(posmem);
-      SaveValues(0);
+      defaultrequest = 1;
+      //SaveValues(0);
     }
 
   }
@@ -156,30 +161,23 @@ void loop() {
         posmem = pos;
         EditMode = 1;
         SW2en = 0;
+        EditStartTime = millis();
       }
 
-      /*if (EditMode == 1) {
+      if (EditMode == 1 && (EditStartTime + 1000) < millis() ) { 
         EditMode = 0;
         FirstRun = 0;
         encoder->setPosition(posmem);
         SaveValues(0);
-      }*/
+      }
     }
     else {
       SW2en = 0;
     }
 
 
-    if (digitalRead(SW1) == 0) {
-      ActionIdle = millis();
-      if (EditMode == 1) {
-        defaultrequest = 1;
-      }
-      if (EditMode == 0) {
-        encoder->setPosition(0);
-      }
 
-    }
+
 
 
 
@@ -242,11 +240,49 @@ void loop() {
           defaultrequest = 0;
         }
       }
+      
+      if (EditMode == 0 && defaultrequest == 1){
+        defaultrequest = 0;
+        requestedTEMP = memory;
+      }
+
+      requestedTEMP = constrain(requestedTEMP,MINtemp, MAXtemp);
       display.println("Temperature:\n");
       display.setTextSize(2);
       display.println("Cur: " + String(temp.temperature));
       display.println("Req: " + String(requestedTEMP));
       display.setTextSize(1);
+    }
+
+    else if (POSITION == -1) {
+      display.setCursor(0, 12);
+      String ssid;
+      int32_t rssi;
+      uint8_t encryptionType;
+      uint8_t* bssid;
+      int32_t channel;
+      bool hidden;
+      int scanResult;
+
+      Serial.println(F("Starting WiFi scan..."));
+
+      scanResult = WiFi.scanNetworks(/*async=*/false, /*hidden=*/true);
+
+      if (scanResult == 0) {
+        Serial.println(F("No networks found"));
+      } else if (scanResult > 0) {
+        Serial.printf(PSTR("%d networks found:\n"), scanResult);
+
+        // Print unsorted scan results
+        for (int8_t i = 0; i < scanResult; i++) {
+          WiFi.getNetworkInfo(i, ssid, encryptionType, rssi, bssid, channel, hidden);
+
+          display.printf(PSTR("%ddBm %s\n"), rssi, ssid.c_str());
+          delay(0);
+        }
+      } else {
+        Serial.printf(PSTR("WiFi scan error %d"), scanResult);
+      }
     }
     else {
 
@@ -260,6 +296,8 @@ void loop() {
     }
 
     display.display();
+    attachInterrupt(digitalPinToInterrupt(SW1), BUT1, FALLING);
+
   }
 }
 
@@ -288,16 +326,7 @@ void ShowBat() {
 
 }
 
-void ShowAP() {
-  display.setCursor(0, 12);
-  int n = WiFi.scanNetworks();
-  Serial.print(n);
-  Serial.println(" network(s) found");
-  for (int i = 0; i < n; i++)
-  {
-    display.println(WiFi.SSID(i));
-  }
-}
+
 
 
 void ShowDateTime() {
@@ -348,4 +377,26 @@ void SaveValues(bool tSAVE) {
 
   EEPROM.commit();
   Serial.println("Saving value:" + String(requestedTEMP));
+}
+
+
+//ISR realm
+
+IRAM_ATTR void checkPosition()
+{
+  ActionIdle = millis();
+  encoder->tick(); // just call tick() to check the state.
+  //DirE = (int)encoder->getDirection();
+}
+
+IRAM_ATTR void BUT1() {
+  // if (digitalRead(SW1) == 0) {
+  ActionIdle = millis();
+  if (EditMode == 1) {
+    defaultrequest = 1;
+  }
+  if (EditMode == 0) {
+    encoder->setPosition(0);
+  }
+  detachInterrupt(digitalPinToInterrupt(SW1));
 }
