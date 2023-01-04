@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Michal\Documents\GitHub\SmartHome\Thermostat\Receiver_ESP8266\Receiver_ESP8266.kicad_sch</source>
+    <date>04.01.2023 13:55:27</date>
+    <tool>Eeschema (6.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Receiver_ESP8266.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A1">
+      <value>BMP(E)_180(280)</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <libsource lib="BMP(E)_180(280)" part="BMP(E)_180(280)" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4f6aa278-908b-4606-ab16-3f89a1d8ebf8</tstamps>
+    </comp>
+    <comp ref="A2">
+      <value>TP4056_Module</value>
+      <footprint>WK_Samec-12pin:TP4056-18650</footprint>
+      <libsource lib="TP4056_Module" part="TP4056_Module" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0dac2fad-51ba-45c3-9ce2-db75253acc13</tstamps>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery</value>
+      <footprint>Battery:BatteryHolder_MPD_BH-18650-PC2</footprint>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96fa3736-070f-437c-b67e-34080cd0f9e4</tstamps>
+    </comp>
+    <comp ref="BT2">
+      <value>Battery</value>
+      <footprint>Battery:BatteryHolder_MPD_BH-18650-PC2</footprint>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb17dd86-d529-4743-b812-16004eaecd3a</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd413ad9-e4b7-4314-9e46-ea445b062183</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>203e5b2e-39ac-4c61-8ae1-6c3eb4a9b53a</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>839513d1-f12b-48ae-92f2-d199bce11181</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6294028-edd1-40b6-b00e-e57b805a4242</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ae56d6a4-b379-4b15-89f1-001c30da5976</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43f495e5-b08c-4bbb-9fdf-d02bacd97f2d</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a78c5122-6887-484b-ba34-8407b591dabe</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6cefee5e-9b90-4c0b-8f34-654723b28776</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2a4ab0f-7b61-4136-a9a6-374b0550d564</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6a204d95-f364-4253-a551-6196456ef512</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55573413-9088-4970-bfd6-a3fe51069754</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fef7f598-9c33-481a-ae04-1b823766a821</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>100n</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e231aac-6720-4050-bd4c-4b3b70495b8a</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8248d2f0-716a-4945-96b7-88f00827d22e</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a55d763b-0230-442f-8e3d-7009993811fb</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm_Clear</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d14ea9a7-ace6-4260-be1e-61c530cc7518</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm_Clear</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>604e465d-ece1-4a6d-8a40-2b4cd1f3b8d3</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c13d82b-ee9b-456d-975a-09f5bc5b5d1b</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0909c65a-564a-4b13-9e2a-413667f3cc30</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>4V7</value>
+      <footprint>Diode_THT:D_A-405_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2bd6733b-045f-4c68-a1bc-fd00547e7b76</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>15V</value>
+      <footprint>Diode_THT:D_A-405_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2d7a12a-b03c-4068-9964-d7938f6f26c5</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>4V3</value>
+      <footprint>Diode_THT:D_A-405_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe58fb1c-599d-423b-aab3-38c75699233a</tstamps>
+    </comp>
+    <comp ref="D10">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d053b9cd-e335-4574-a105-aad8749e5dcd</tstamps>
+    </comp>
+    <comp ref="D11">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm_Clear</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47f22140-8c4b-4e3b-8b5e-b8f4a322121c</tstamps>
+    </comp>
+    <comp ref="D12">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d805a13-d5bb-4a16-848c-e664f63eb87b</tstamps>
+    </comp>
+    <comp ref="D13">
+      <value>D_Bridge_+-AA</value>
+      <footprint>Diode_THT:Diode_Bridge_DIP-4_W7.62mm_P5.08mm</footprint>
+      <libsource lib="Device" part="D_Bridge_+-AA" description="Diode bridge, +ve/-ve/AC/AC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88f84ef9-9d3e-4cdb-adb5-0a0c4303d364</tstamps>
+    </comp>
+    <comp ref="D14">
+      <value>WS2812B</value>
+      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
+      <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4f69588a-618f-4630-87f5-2ea7de18a72f</tstamps>
+    </comp>
+    <comp ref="D15">
+      <value>WS2812B</value>
+      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
+      <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ae800e82-ca51-452f-9ee8-aee7bba42b0e</tstamps>
+    </comp>
+    <comp ref="D16">
+      <value>WS2812B</value>
+      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
+      <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e522fa0f-df72-44c6-8936-73e2106fff0c</tstamps>
+    </comp>
+    <comp ref="D17">
+      <value>Kotel status</value>
+      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
+      <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03b5e6c2-4494-4681-aa23-a15a3669b548</tstamps>
+    </comp>
+    <comp ref="D18">
+      <value>MCU status</value>
+      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
+      <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>565da132-8ef0-48b3-9aee-ab540688b39c</tstamps>
+    </comp>
+    <comp ref="D19">
+      <value>WS2812B</value>
+      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
+      <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3e02f18-8f12-496d-88f3-6e55ad7e8277</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e666765-0ac1-4bbb-bbb4-e69aaf33a81b</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2713445a-5e01-40d8-94c6-c4d9a94c1daa</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17389fd7-4396-47ba-9330-8fa6cd46b625</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e14fd10c-3ad8-4e99-8cca-40f72c0483ff</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Screw_Terminal_01x04</value>
+      <footprint>TerminalBlock:TerminalBlock_Altech_AK300-4_P5.00mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x04" description="Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79618d03-138a-4a1d-8b35-017aad981c6b</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d6156fd1-51e7-4660-9625-5da2be4b73fa</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Screw_Terminal_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x04" description="Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>014caa44-0617-45b2-9d6c-9a6f3108de5f</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Screw_Terminal_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x04" description="Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0cadde68-8d45-4768-a3a5-bb62da444f47</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x07_Female</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x07_Female" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>adcde232-d25a-4cb4-b66b-41b35edf1407</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>4x20 IIC Display</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>764cbf2c-7beb-45b1-9677-22ebd1aecc08</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Barrel_Jack_Switch</value>
+      <footprint>Connector_BarrelJack:BarrelJack_Horizontal</footprint>
+      <libsource lib="Connector" part="Barrel_Jack_Switch" description="DC Barrel Jack with an internal switch"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c984114-dbf2-4b71-a75d-2369c0ba4b0d</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x02_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa86f995-a558-4795-9dc2-a95d40f5ab3f</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>2N3906</value>
+      <footprint>Package_TO_SOT_THT:TO-92L_Inline_Wide</footprint>
+      <datasheet>https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844</field>
+        <field name="Description">TRANS NPN 30V 0.8A TO-18</field>
+        <field name="Digi-Key_PN">2N2222CS-ND</field>
+        <field name="Family">Transistors - Bipolar (BJT) - Single</field>
+        <field name="MPN">2N2222</field>
+        <field name="Manufacturer">Central Semiconductor Corp</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-Bipolar-BJT-Single" part="2N2222" description="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Digi-Key_PN" value="2N2222CS-ND"/>
+      <property name="MPN" value="2N2222"/>
+      <property name="Category" value="Discrete Semiconductor Products"/>
+      <property name="Family" value="Transistors - Bipolar (BJT) - Single"/>
+      <property name="DK_Datasheet_Link" value="https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844"/>
+      <property name="Description" value="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Manufacturer" value="Central Semiconductor Corp"/>
+      <property name="Status" value="Active"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c009e84c-6e30-451d-9669-56aec860eb3e</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>2N3906</value>
+      <footprint>Package_TO_SOT_THT:TO-92L_Inline_Wide</footprint>
+      <datasheet>https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844</field>
+        <field name="Description">TRANS NPN 30V 0.8A TO-18</field>
+        <field name="Digi-Key_PN">2N2222CS-ND</field>
+        <field name="Family">Transistors - Bipolar (BJT) - Single</field>
+        <field name="MPN">2N2222</field>
+        <field name="Manufacturer">Central Semiconductor Corp</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-Bipolar-BJT-Single" part="2N2222" description="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Digi-Key_PN" value="2N2222CS-ND"/>
+      <property name="MPN" value="2N2222"/>
+      <property name="Category" value="Discrete Semiconductor Products"/>
+      <property name="Family" value="Transistors - Bipolar (BJT) - Single"/>
+      <property name="DK_Datasheet_Link" value="https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844"/>
+      <property name="Description" value="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Manufacturer" value="Central Semiconductor Corp"/>
+      <property name="Status" value="Active"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2a21ab27-5a3f-4c4e-a73f-37390e504792</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>2N3906</value>
+      <footprint>Package_TO_SOT_THT:TO-92L_Inline_Wide</footprint>
+      <datasheet>https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844</field>
+        <field name="Description">TRANS NPN 30V 0.8A TO-18</field>
+        <field name="Digi-Key_PN">2N2222CS-ND</field>
+        <field name="Family">Transistors - Bipolar (BJT) - Single</field>
+        <field name="MPN">2N2222</field>
+        <field name="Manufacturer">Central Semiconductor Corp</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-Bipolar-BJT-Single" part="2N2222" description="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Digi-Key_PN" value="2N2222CS-ND"/>
+      <property name="MPN" value="2N2222"/>
+      <property name="Category" value="Discrete Semiconductor Products"/>
+      <property name="Family" value="Transistors - Bipolar (BJT) - Single"/>
+      <property name="DK_Datasheet_Link" value="https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844"/>
+      <property name="Description" value="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Manufacturer" value="Central Semiconductor Corp"/>
+      <property name="Status" value="Active"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c2f9cde-2a94-4b6d-89af-3440d472b612</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>SS8050</value>
+      <footprint>Package_TO_SOT_THT:TO-92L_Inline_Wide</footprint>
+      <datasheet>https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844</field>
+        <field name="Description">TRANS NPN 30V 0.8A TO-18</field>
+        <field name="Digi-Key_PN">2N2222CS-ND</field>
+        <field name="Family">Transistors - Bipolar (BJT) - Single</field>
+        <field name="MPN">2N2222</field>
+        <field name="Manufacturer">Central Semiconductor Corp</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-Bipolar-BJT-Single" part="2N2222" description="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Digi-Key_PN" value="2N2222CS-ND"/>
+      <property name="MPN" value="2N2222"/>
+      <property name="Category" value="Discrete Semiconductor Products"/>
+      <property name="Family" value="Transistors - Bipolar (BJT) - Single"/>
+      <property name="DK_Datasheet_Link" value="https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844"/>
+      <property name="Description" value="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Manufacturer" value="Central Semiconductor Corp"/>
+      <property name="Status" value="Active"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db2e9df3-5866-477c-b122-58d40133d766</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>SS8050</value>
+      <footprint>Package_TO_SOT_THT:TO-92L_Inline_Wide</footprint>
+      <datasheet>https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844</field>
+        <field name="Description">TRANS NPN 30V 0.8A TO-18</field>
+        <field name="Digi-Key_PN">2N2222CS-ND</field>
+        <field name="Family">Transistors - Bipolar (BJT) - Single</field>
+        <field name="MPN">2N2222</field>
+        <field name="Manufacturer">Central Semiconductor Corp</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-Bipolar-BJT-Single" part="2N2222" description="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Digi-Key_PN" value="2N2222CS-ND"/>
+      <property name="MPN" value="2N2222"/>
+      <property name="Category" value="Discrete Semiconductor Products"/>
+      <property name="Family" value="Transistors - Bipolar (BJT) - Single"/>
+      <property name="DK_Datasheet_Link" value="https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844"/>
+      <property name="Description" value="TRANS NPN 30V 0.8A TO-18"/>
+      <property name="Manufacturer" value="Central Semiconductor Corp"/>
+      <property name="Status" value="Active"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>501d3253-65a3-4892-b887-19e5cd2bf2e7</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b056736b-0e23-45d2-8e03-db673d2c1a79</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7570cc92-7421-4556-b683-14d4d8a46cc2</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba6baa6c-13b9-488c-9c97-19704668d068</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88c106cc-6a04-4c80-8ca5-21aadf90021e</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ed6b9a7-bbca-4629-abbc-bb1da9e02295</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d19f6f6b-a2c0-4c69-9a16-5ae4881a0215</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad40eca4-a75c-4e15-9ad1-4fa65836d2a9</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>220</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65e56da5-ed19-4cb5-8ea1-87ba135dda28</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d351330-ee72-48a1-aac4-5028fa6db4a8</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>320</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>836cd258-6e21-4132-9151-a4b1b644e5cc</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>330</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22317777-b1ab-4101-a0b5-3973467694a7</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1k5</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>688dd690-13c7-4886-b03b-fae0b9179c17</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>330</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9b4e634-30c2-46ef-9661-a2511ffb8282</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca732df0-841c-46b2-96b9-d77d13584bfd</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5a10efe-7a10-4b9e-9cd8-a54114330eab</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>083e1a17-4d2b-41f4-9f1b-ca7db66d10c6</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>24485594-06f1-4f4f-813a-edf2c9ea9d9c</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0ced54f-6264-423b-87ce-3bef76a25c53</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87e9f15d-ead3-4eb3-b376-13ccb17b64e9</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc16efc6-c35c-413d-9a35-a973a2634daf</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ce85a56-70d3-4384-af1c-ba0f32be78a5</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3019cd7d-d905-4256-ac07-1e58a26f3c06</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>20k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67a11f6a-4ece-4dc6-a8e5-fd9307451010</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a370e721-6191-464c-9f8f-16e70690ef08</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c364ede3-5786-4778-834a-e1f6bca1dca0</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>593b48cc-3da7-4830-870c-3ff0ccb262a4</tstamps>
+    </comp>
+    <comp ref="R27">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9ef8639-ca67-488a-af4d-eebee6619d08</tstamps>
+    </comp>
+    <comp ref="R28">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9ff82e7-a16e-4f24-b106-b0562322f385</tstamps>
+    </comp>
+    <comp ref="R29">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>320b32cb-a7fa-4613-b27d-ff417c11d189</tstamps>
+    </comp>
+    <comp ref="R30">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47125a56-932d-47fa-8def-5b0bb9ed74cc</tstamps>
+    </comp>
+    <comp ref="R31">
+      <value>330</value>
+      <footprint>Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f4b567c-6e2f-403a-9c14-5f8630d70387</tstamps>
+    </comp>
+    <comp ref="S1">
+      <value>EG1218</value>
+      <footprint>Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled</footprint>
+      <datasheet>http://spec_sheets.e-switch.com/specs/P040040.pdf</datasheet>
+      <fields>
+        <field name="Category">Switches</field>
+        <field name="DK_Datasheet_Link">http://spec_sheets.e-switch.com/specs/P040040.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/e-switch/EG1218/EG1903-ND/101726</field>
+        <field name="Description">SWITCH SLIDE SPDT 200MA 30V</field>
+        <field name="Digi-Key_PN">EG1903-ND</field>
+        <field name="Family">Slide Switches</field>
+        <field name="MPN">EG1218</field>
+        <field name="Manufacturer">E-Switch</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Slide-Switches" part="EG1218" description="SWITCH SLIDE SPDT 200MA 30V"/>
+      <property name="Digi-Key_PN" value="EG1903-ND"/>
+      <property name="MPN" value="EG1218"/>
+      <property name="Category" value="Switches"/>
+      <property name="Family" value="Slide Switches"/>
+      <property name="DK_Datasheet_Link" value="http://spec_sheets.e-switch.com/specs/P040040.pdf"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/e-switch/EG1218/EG1903-ND/101726"/>
+      <property name="Description" value="SWITCH SLIDE SPDT 200MA 30V"/>
+      <property name="Manufacturer" value="E-Switch"/>
+      <property name="Status" value="Active"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>407a8d34-0a6e-4d6e-80f1-eeebe4a299cb</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>Flash</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d9f9a95-294c-4de2-8938-8eb1193fae0e</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>Reset</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c62d4278-6b5d-4e14-a6ad-d17662e7c6cc</tstamps>
+    </comp>
+    <comp ref="SW3">
+      <value>Up</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>789f9116-358d-4b4c-bffb-c14a766309a4</tstamps>
+    </comp>
+    <comp ref="SW4">
+      <value>Down</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96d1bfe6-9407-4c65-8ab4-859a0cc909a7</tstamps>
+    </comp>
+    <comp ref="SW5">
+      <value>Left</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f24d210e-b266-4338-8eb1-3c4ecded3238</tstamps>
+    </comp>
+    <comp ref="SW6">
+      <value>Right</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32a4d26b-62a4-4ecb-a3f1-ca8010da59ae</tstamps>
+    </comp>
+    <comp ref="SW7">
+      <value>Confirm</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ea1f95a8-6bf8-473f-a230-9c044804ef67</tstamps>
+    </comp>
+    <comp ref="SW8">
+      <value>Exit</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b1583e1e-abd9-4ad9-b96d-78c9c5d27347</tstamps>
+    </comp>
+    <comp ref="SW9">
+      <value>Menu</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5290012-f102-4141-bb49-273eabe4e1e2</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>SFH617A-1X001</value>
+      <footprint>Package_DIP:DIP-4_W7.62mm</footprint>
+      <datasheet>http://www.vishay.com/docs/83740/sfh617a.pdf</datasheet>
+      <libsource lib="Isolator" part="SFH617A-1X001" description="Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, VDE, UL, BSI, FIMKO, cUL, THT PDIP-4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9da33fa-b300-455e-8160-8f0ae8189b25</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>SFH617A-1X001</value>
+      <footprint>Package_DIP:DIP-4_W7.62mm</footprint>
+      <datasheet>http://www.vishay.com/docs/83740/sfh617a.pdf</datasheet>
+      <libsource lib="Isolator" part="SFH617A-1X001" description="Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, VDE, UL, BSI, FIMKO, cUL, THT PDIP-4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef8059f4-e414-46ab-a886-543a54a950de</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>SFH617A-1X001</value>
+      <footprint>Package_DIP:DIP-4_W7.62mm</footprint>
+      <datasheet>http://www.vishay.com/docs/83740/sfh617a.pdf</datasheet>
+      <libsource lib="Isolator" part="SFH617A-1X001" description="Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, VDE, UL, BSI, FIMKO, cUL, THT PDIP-4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>648ce89c-3f3f-4482-b219-8d99f50b278a</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>SFH617A-1X001</value>
+      <footprint>Package_DIP:DIP-4_W7.62mm</footprint>
+      <datasheet>http://www.vishay.com/docs/83740/sfh617a.pdf</datasheet>
+      <libsource lib="Isolator" part="SFH617A-1X001" description="Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, VDE, UL, BSI, FIMKO, cUL, THT PDIP-4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98f77854-2001-4ee0-b2f8-cea02cdf7b3b</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>ESP-12S</value>
+      <footprint>RF_Module:ESP-07</footprint>
+      <fields>
+        <field name="PROD_ID">IC-14115</field>
+      </fields>
+      <libsource lib="ESP-12S" part="ESP-12S" description=""/>
+      <property name="PROD_ID" value="IC-14115"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be38f05b-751e-404a-94cf-568c58838c13</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>PCF8574A</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf</datasheet>
+      <libsource lib="Interface_Expansion" part="PCF8574A" description="8 Bit Port/Expander to I2C Bus, DIP/SOIC-16"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46b25db5-63a9-4a14-9c56-17b2f1d2c593</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>AMS1117-3.3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.advanced-monolithic.com/pdf/ds1117.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="AMS1117-3.3" description="1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Receiver_ESP8266.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30304e2e-fae0-4942-8805-94df7afa183a</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="BMP(E)_180(280)" part="BMP(E)_180(280)">
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">BMP(E)_180(280)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="SCL" type="bidirectional"/>
+        <pin num="4" name="SDA" type="bidirectional"/>
+        <pin num="5" name="SCB" type="bidirectional"/>
+        <pin num="6" name="SDO" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Barrel_Jack_Switch">
+      <description>DC Barrel Jack with an internal switch</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack_Switch</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x07_Female">
+      <description>Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x07_Female</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x04">
+      <description>Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery">
+      <description>Multiple-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Bridge_+-AA">
+      <description>Diode bridge, +ve/-ve/AC/AC</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>D*Bridge*</fp>
+        <fp>D*Rectifier*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Bridge_+-AA</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N4148">
+      <description>100V 0.15A standard switching diode, DO-35</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</docs>
+      <footprints>
+        <fp>D*DO?35*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4148</field>
+        <field name="Footprint">Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP-12S" part="ESP-12S">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP-12S</field>
+        <field name="Footprint">ESP-12S</field>
+        <field name="PROD_ID">IC-14115</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RST" type="bidirectional"/>
+        <pin num="2" name="ADC" type="bidirectional"/>
+        <pin num="3" name="EN" type="bidirectional"/>
+        <pin num="4" name="IO16" type="bidirectional"/>
+        <pin num="5" name="IO14" type="bidirectional"/>
+        <pin num="6" name="IO12" type="bidirectional"/>
+        <pin num="7" name="IO13" type="bidirectional"/>
+        <pin num="8" name="VCC" type="bidirectional"/>
+        <pin num="9" name="GND" type="bidirectional"/>
+        <pin num="10" name="IO15" type="bidirectional"/>
+        <pin num="11" name="IO2" type="bidirectional"/>
+        <pin num="12" name="IO0" type="bidirectional"/>
+        <pin num="13" name="IO4" type="bidirectional"/>
+        <pin num="14" name="IO5" type="bidirectional"/>
+        <pin num="15" name="RXD0" type="bidirectional"/>
+        <pin num="16" name="TXD0" type="bidirectional"/>
+        <pin num="P$1" name="GND" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_Expansion" part="PCF8574A">
+      <description>8 Bit Port/Expander to I2C Bus, DIP/SOIC-16</description>
+      <docs>http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOIC*7.5x10.3mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PCF8574A</field>
+        <field name="Datasheet">http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="P0" type="bidirectional"/>
+        <pin num="5" name="P1" type="bidirectional"/>
+        <pin num="6" name="P2" type="bidirectional"/>
+        <pin num="7" name="P3" type="bidirectional"/>
+        <pin num="8" name="VSS" type="power_in"/>
+        <pin num="9" name="P4" type="bidirectional"/>
+        <pin num="10" name="P5" type="bidirectional"/>
+        <pin num="11" name="P6" type="bidirectional"/>
+        <pin num="12" name="P7" type="bidirectional"/>
+        <pin num="13" name="~{INT}" type="open_collector"/>
+        <pin num="14" name="SCL" type="input"/>
+        <pin num="15" name="SDA" type="bidirectional"/>
+        <pin num="16" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Isolator" part="SFH617A-1X001">
+      <description>Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, VDE, UL, BSI, FIMKO, cUL, THT PDIP-4</description>
+      <docs>http://www.vishay.com/docs/83740/sfh617a.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SFH617A-1X001</field>
+        <field name="Footprint">Package_DIP:DIP-4_W7.62mm</field>
+        <field name="Datasheet">http://www.vishay.com/docs/83740/sfh617a.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LED" part="WS2812B">
+      <description>RGB LED with integrated controller</description>
+      <docs>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</docs>
+      <footprints>
+        <fp>LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">WS2812B</field>
+        <field name="Footprint">LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="DOUT" type="output"/>
+        <pin num="3" name="VSS" type="power_in"/>
+        <pin num="4" name="DIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AMS1117-3.3">
+      <description>1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223</description>
+      <docs>http://www.advanced-monolithic.com/pdf/ds1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AMS1117-3.3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+        <field name="Datasheet">http://www.advanced-monolithic.com/pdf/ds1117.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TP4056_Module" part="TP4056_Module">
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">TP4056_Module</field>
+      </fields>
+      <pins>
+        <pin num="1" name="5v+" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT+" type="power_out"/>
+        <pin num="4" name="OUT-" type="power_out"/>
+        <pin num="5" name="BAT+" type="power_out"/>
+        <pin num="6" name="BAT-" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Slide-Switches" part="EG1218">
+      <description>SWITCH SLIDE SPDT 200MA 30V</description>
+      <docs>http://spec_sheets.e-switch.com/specs/P040040.pdf</docs>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">EG1218</field>
+        <field name="Footprint">digikey-footprints:Switch_Slide_11.6x4mm_EG1218</field>
+        <field name="Datasheet">http://spec_sheets.e-switch.com/specs/P040040.pdf</field>
+        <field name="Digi-Key_PN">EG1903-ND</field>
+        <field name="MPN">EG1218</field>
+        <field name="Category">Switches</field>
+        <field name="Family">Slide Switches</field>
+        <field name="DK_Datasheet_Link">http://spec_sheets.e-switch.com/specs/P040040.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/e-switch/EG1218/EG1903-ND/101726</field>
+        <field name="Description">SWITCH SLIDE SPDT 200MA 30V</field>
+        <field name="Manufacturer">E-Switch</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Transistors-Bipolar-BJT-Single" part="2N2222">
+      <description>TRANS NPN 30V 0.8A TO-18</description>
+      <docs>https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N2222</field>
+        <field name="Footprint">digikey-footprints:TO-18-3</field>
+        <field name="Datasheet">https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</field>
+        <field name="Digi-Key_PN">2N2222CS-ND</field>
+        <field name="MPN">2N2222</field>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="Family">Transistors - Bipolar (BJT) - Single</field>
+        <field name="DK_Datasheet_Link">https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/central-semiconductor-corp/2N2222/2N2222CS-ND/4806844</field>
+        <field name="Description">TRANS NPN 30V 0.8A TO-18</field>
+        <field name="Manufacturer">Central Semiconductor Corp</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BMP(E)_180(280)">
+      <uri>C:/Users/Michal/Documents/KiCad/6.0/symbols/BMP(E)_180(280).kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+    </library>
+    <library logical="ESP-12S">
+      <uri>C:/Users/Michal/Documents/KiCad/6.0/footprints/ESP-12S/ESP-12S.lib</uri>
+    </library>
+    <library logical="Interface_Expansion">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Interface_Expansion.kicad_sym</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Isolator.kicad_sym</uri>
+    </library>
+    <library logical="LED">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/LED.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+    </library>
+    <library logical="TP4056_Module">
+      <uri>C:/Users/Michal/Documents/KiCad/6.0/symbols/TP4056_Module.kicad_sym</uri>
+    </library>
+    <library logical="dk_Slide-Switches">
+      <uri>C:/Users/Michal/Documents/KiCad/6.0/symbols/digikey-symbols/dk_Slide-Switches.lib</uri>
+    </library>
+    <library logical="dk_Transistors-Bipolar-BJT-Single">
+      <uri>C:/Users/Michal/Documents/KiCad/6.0/symbols/digikey-symbols/dk_Transistors-Bipolar-BJT-Single.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pintype="passive"/>
+    </net>
+    <net code="2" name="/Confirm">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="SW7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="9" pinfunction="P4" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/Down">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="SW4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="P1" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/Exit">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="SW8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="10" pinfunction="P5" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/Left">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="SW5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="6" pinfunction="P2" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/Menu">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="R30" pin="1" pintype="passive"/>
+      <node ref="SW9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="11" pinfunction="P6" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/Neopixel">
+      <node ref="D19" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="U6" pin="12" pinfunction="P7" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/Right">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="SW6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="7" pinfunction="P3" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/Up">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="P0" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="GND">
+      <node ref="A1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="A2" pin="4" pinfunction="OUT-" pintype="power_out"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D14" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="D15" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="D16" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="D17" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="D18" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="D19" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="2" pintype="passive"/>
+      <node ref="U3" pin="2" pintype="passive"/>
+      <node ref="U5" pin="9" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="U5" pin="P$1" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="U6" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U6" pin="2" pinfunction="A1" pintype="input"/>
+      <node ref="U6" pin="3" pinfunction="A2" pintype="input"/>
+      <node ref="U6" pin="8" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U7" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="11" name="GND1">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(A1-Pad3)">
+      <node ref="A1" pin="3" pinfunction="SCL" pintype="bidirectional"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U5" pin="14" pinfunction="IO5" pintype="bidirectional"/>
+      <node ref="U6" pin="14" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="13" name="Net-(A1-Pad4)">
+      <node ref="A1" pin="4" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="J6" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U5" pin="13" pinfunction="IO4" pintype="bidirectional"/>
+      <node ref="U6" pin="15" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="Net-(A2-Pad1)">
+      <node ref="A2" pin="1" pinfunction="5v+" pintype="power_in"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D10" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D11" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D13" pin="1" pinfunction="+" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(A2-Pad2)">
+      <node ref="A2" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="D13" pin="2" pinfunction="-" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(A2-Pad3)">
+      <node ref="A2" pin="3" pinfunction="OUT+" pintype="power_out"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U7" pin="3" pinfunction="VI" pintype="power_in"/>
+    </net>
+    <net code="17" name="Net-(A2-Pad5)">
+      <node ref="A2" pin="5" pinfunction="BAT+" pintype="power_out"/>
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="BT2" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="D12" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(A2-Pad6)">
+      <node ref="A2" pin="6" pinfunction="BAT-" pintype="power_out"/>
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="BT2" pin="2" pinfunction="-" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="S1" pin="3" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="20" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q3" pin="1" pinfunction="E" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U4" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="E" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="E" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(D7-Pad1)">
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(D8-Pad1)">
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="U3" pin="4" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(D9-Pad1)">
+      <node ref="D9" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="3" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(D10-Pad1)">
+      <node ref="D10" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D12" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+    </net>
+    <net code="32" name="Net-(D11-Pad2)">
+      <node ref="D11" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+    </net>
+    <net code="33" name="Net-(D13-Pad3)">
+      <node ref="D13" pin="3" pintype="passive"/>
+      <node ref="J7" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="Net-(D13-Pad4)">
+      <node ref="D13" pin="4" pintype="passive"/>
+      <node ref="J7" pin="2" pintype="passive"/>
+      <node ref="J7" pin="3" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(D14-Pad4)">
+      <node ref="D14" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="D15" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="36" name="Net-(D15-Pad4)">
+      <node ref="D15" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="D16" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="37" name="Net-(D16-Pad4)">
+      <node ref="D16" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="D17" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="38" name="Net-(D17-Pad4)">
+      <node ref="D17" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="D18" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="39" name="Net-(D18-Pad4)">
+      <node ref="D18" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="D19" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="40" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pintype="passive"/>
+    </net>
+    <net code="42" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U5" pin="11" pinfunction="IO2" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="Net-(J3-Pad3)">
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="IO13" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="IO14" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="Net-(J4-Pad3)">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U4" pin="3" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="IO12" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="Net-(J5-Pad1)">
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="E" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(J5-Pad5)">
+      <node ref="J5" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U5" pin="15" pinfunction="RXD0" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="Net-(J5-Pad6)">
+      <node ref="J5" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U5" pin="16" pinfunction="TXD0" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="Net-(J5-Pad7)">
+      <node ref="J5" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="Q5" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+    </net>
+    <net code="50" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="51" name="Net-(Q2-Pad2)">
+      <node ref="Q2" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="52" name="Net-(Q4-Pad2)">
+      <node ref="Q4" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(Q4-Pad3)">
+      <node ref="Q4" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="RST" pintype="bidirectional"/>
+      <node ref="U5" pin="4" pinfunction="IO16" pintype="bidirectional"/>
+    </net>
+    <net code="54" name="Net-(Q5-Pad1)">
+      <node ref="Q5" pin="1" pinfunction="E" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U5" pin="12" pinfunction="IO0" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="Net-(Q5-Pad2)">
+      <node ref="Q5" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="56" name="Net-(R6-Pad2)">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pintype="passive"/>
+    </net>
+    <net code="58" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U2" pin="1" pintype="passive"/>
+    </net>
+    <net code="59" name="Net-(R13-Pad2)">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U3" pin="1" pintype="passive"/>
+    </net>
+    <net code="60" name="Net-(R16-Pad2)">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="EN" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="Net-(R19-Pad1)">
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U5" pin="10" pinfunction="IO15" pintype="bidirectional"/>
+    </net>
+    <net code="62" name="Net-(R22-Pad1)">
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="ADC" pintype="bidirectional"/>
+    </net>
+    <net code="63" name="VCC">
+      <node ref="A1" pin="1" pinfunction="VIN" pintype="power_in"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="D14" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="D15" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="D16" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="D17" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="D18" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="D19" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+      <node ref="S1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pintype="passive"/>
+      <node ref="U4" pin="4" pintype="passive"/>
+      <node ref="U5" pin="8" pinfunction="VCC" pintype="bidirectional"/>
+      <node ref="U6" pin="16" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="64" name="unconnected-(A1-Pad5)">
+      <node ref="A1" pin="5" pinfunction="SCB" pintype="bidirectional"/>
+    </net>
+    <net code="65" name="unconnected-(A1-Pad6)">
+      <node ref="A1" pin="6" pinfunction="SDO" pintype="bidirectional"/>
+    </net>
+    <net code="66" name="unconnected-(D14-Pad2)">
+      <node ref="D14" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="67" name="unconnected-(J5-Pad3)">
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="68" name="unconnected-(S1-Pad1)">
+      <node ref="S1" pin="1" pintype="passive"/>
+    </net>
+    <net code="69" name="unconnected-(U6-Pad13)">
+      <node ref="U6" pin="13" pinfunction="~{INT}" pintype="open_collector"/>
+    </net>
+  </nets>
+</export>

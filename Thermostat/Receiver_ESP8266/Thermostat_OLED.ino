@@ -6,13 +6,34 @@
 #include <NTPClient.h>
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
+#include <ESPAsyncTCP.h>
+
+//#include <ESPAsyncWebServer.h>
 #include <WiFiManager.h>
 #include <InfluxDbClient.h>
+#include "Adafruit_MQTT.h"
+#include "Adafruit_MQTT_Client.h"
+
 #include <ESP_EEPROM.h>
 #define TZ_INFO "CET-1CEST,M3.5.0,M10.5.0/3"
 
 const long EditInterval = 2000;           // interval at which to blink (milliseconds)
 bool EditMode;
+
+//mqtt
+WiFiClient client;
+//AsyncWebServer server(80);
+
+#define MQTT_BROKER_IP    "192.168.0.8"
+#define MQTT_BROKER_PORT  1883    //default port is 1883
+#define MQTT_USERNAME     "admin"
+#define MQTT_PASSWORD     "123456780"
+
+Adafruit_MQTT_Client mqtt(&client, MQTT_BROKER_IP, MQTT_BROKER_PORT, MQTT_USERNAME, MQTT_PASSWORD);
+Adafruit_MQTT_Publish RequestedTemp = Adafruit_MQTT_Publish(&mqtt, "Chalupa/TempReq");
+Adafruit_MQTT_Publish RealTemp = Adafruit_MQTT_Publish(&mqtt, "Chalupa/TempCur");
+Adafruit_MQTT_Subscribe OverrideTemp = Adafruit_MQTT_Subscribe(&mqtt, "Chalupa/TempOverride");
+
 
 
 #define ENCa 14
@@ -26,9 +47,10 @@ int SW1time = 0;
 double ActionIdle = 0;
 static const unsigned long idlelimit = 7500; // ms
 static unsigned long lastRefreshTime = 0;
+bool TempIncreaseFlag = 0;
+int TempIncrease = 1; //po dosažení teploty sepnutí, zvyž požadovanou o TempIncrease a sepni flag tempincreaes. až dosáhne TempReq + TempIncrease, flag nastav na 0 a vrať se na TempReq
 
 #define i2c_Address 0x3c //initialize with the I2C addr 0x3C Typically eBay OLED's
-
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 #define OLED_RESET -1   //   QT-PY / XIAO
@@ -49,13 +71,13 @@ char Minutes[16];
 char Hours[16];
 char daysOfTheWeek[7][12] = {"Ne", "Po", "Ut", "St", "Ct", "Pa", "So"};
 char months[12][12] = {"Prosinec", "Leden", "Unor", "Brezen", "Duben", "Kveten", "Cerven", "Cervenec", "Srpen", "Zari", "Rijen", "Listopad"};
-
+int MQTTcount = 0;
 double requestedTEMP = 20;
-double MINtemp = 10;
-double MAXtemp = 26;
+double MINtemp = 5;
+double MAXtemp = 35;
 int posmem;
 int DirE = 0;
-
+float mqtttemp = 0;
 float count;
 float Batcount = 80021;
 double Voltage;
@@ -67,7 +89,19 @@ bool defaultrequest = 0;
 bool wifiless = 0;
 double EditStartTime = 0;
 
+//Modeselect
+int TherMode[] = {0, 0, 0, 0}; //0 = auto, 1 = Man, 2 = Away, 3 = OFF)
+
 RotaryEncoder *encoder = nullptr;
+
+
+
+
+
+
+
+
+
 
 
 
@@ -103,10 +137,26 @@ void setup() {
     wifiManager.autoConnect("Thermostat", "123456780");
     timeSync(TZ_INFO, "time.cloudflare.com");
   }
+  MQTT_Connect();
+  delay(50);
+  Adafruit_MQTT_Subscribe *subscription;
+  mqtt.subscribe(&OverrideTemp);
+
+
+
+
+
+  
 }
+
+
+  
+
+
 
 void loop() {
 
+    
 
 
   count++;
@@ -143,9 +193,19 @@ void loop() {
     display.clearDisplay();
     ShowBat();
     ShowDateTime();
+    Adafruit_MQTT_Subscribe *subscription;
 
 
 
+  if(requestedTEMP >= mqtttemp && TempIncreaseFlag == 0){
+    TempIncreaseFlag = 1;
+    requestedTEMP += TempIncrease;
+    
+  }
+if(requestedTEMP <= mqtttemp && TempIncreaseFlag == 1){
+  TempIncreaseFlag = 0;
+  requestedTEMP -= TempIncrease;
+}
 
 
     //SWITCHES
@@ -164,9 +224,10 @@ void loop() {
         EditStartTime = millis();
       }
 
-      if (EditMode == 1 && (EditStartTime + 1000) < millis() ) { 
+      if (EditMode == 1 && (EditStartTime + 1000) < millis() ) {
         EditMode = 0;
         FirstRun = 0;
+        TempIncreaseFlag == 0;
         encoder->setPosition(posmem);
         SaveValues(0);
       }
@@ -185,6 +246,7 @@ void loop() {
 
     sensors_event_t humidity, temp;
     aht.getEvent(&humidity, &temp);
+    mqtttemp = temp.temperature;
     if (EditMode == 1) {
       display.setTextSize(1);
       display.setCursor(90, 0);
@@ -195,7 +257,47 @@ void loop() {
     else {
 
     }
+    //4 Módy. Auto (nastavení po-ne až  4 změny/den), manual (nastavit 1 a jede to nonstop), off (nastavit nejnižší teplotu), away (nastavuje se na určitý počet dnů a na určitou tepolotu. Udržuje danou teplotu po x dní dle nastavení. funguje pouze v modu MAN a AUTO)
+    //future: Strana 0: Teplota teď, requested a v menším vlhkos), Strana -1: settings (zde se nastavuje mód (auto, man, away a off), Strana -2: away nastavení (délka a teplota), Strana 2 manual nastavení, Strana 3 nastavení automatiky (TBA)
+    //později menu systém. ne "strany". otočí se doprava, zde se kliknutím SW2 zamkne na této straně. encoderem se vybere nastavení. dalším kliknutím SW2 se přejde do nastavení inviduální věci. pro editaci EDITMODE (5sek hold SW2)(nastavování funguje stejně jako nyní (bez interakce po dobu 5sekund se revertne nastavení, stisknutím SW2 se uloží,stisknutím SW1 se vrátí na předchozí value), po uložení pomocí SW1 se vrátí zpět do menu)
+    /*
+      Modeselect(-1)-Home(0)-Treepage(1)
+      Modeselect: (e)
+      Auto [█]
+      Manu [░]
+      Away [░]
+      Off  [░]
 
+
+      Home:
+      Tem:xx,xx (size2)
+      Req:xx,xx (size2)
+      hum: xx,xx% (size1)
+
+      Hodnoty NOW asi neintegrovat. zbytečnost
+
+      Treepage: ---MANUAL settings---Now: xx,xxC
+                |                 |-Req: xx,xxC (e)
+                |
+                |-Away settings---Temp---Now: xx,xxC
+                |               |      |-Req: xx,xxC (e)
+                |               |
+                |               |-Time--AwayDays: xx (e)
+                |
+                |
+                |-AUTO settings---Po(Ne)---S1(SX)---Enabled: [█] (e)
+                |                                 |-TriggerTime: xx:xx
+                |                                 |-Now: xx,xxC
+                |                                 |-Req: xx,xxC (e)
+                |
+                |-OFF settings---Now: xx,xxC
+                               |-Req: xx,xxC (e)
+
+
+
+
+      (e) = editable
+    */
 
     if (POSITION == 0) {
 
@@ -207,9 +309,11 @@ void loop() {
       display.println(temp.temperature);
       display.print("Hum: ");
       display.println(humidity.relative_humidity);
+      display.print("Req: ");
+      display.println(requestedTEMP);
       display.setTextSize(1);
-      display.print("SW1 " + String(digitalRead(SW1)));
-      display.println(", SW2 " + String(digitalRead(SW2)));
+
+
 
     }
 
@@ -240,21 +344,32 @@ void loop() {
           defaultrequest = 0;
         }
       }
-      
-      if (EditMode == 0 && defaultrequest == 1){
+
+      if (EditMode == 0 && defaultrequest == 1) {
         defaultrequest = 0;
         requestedTEMP = memory;
       }
 
-      requestedTEMP = constrain(requestedTEMP,MINtemp, MAXtemp);
+      requestedTEMP = constrain(requestedTEMP, MINtemp, MAXtemp);
       display.println("Temperature:\n");
       display.setTextSize(2);
       display.println("Cur: " + String(temp.temperature));
       display.println("Req: " + String(requestedTEMP));
       display.setTextSize(1);
     }
+    else if ( POSITION == -1) { //modeselect
+      display.setCursor(0, 12);
+      display.println("AUTO: [" + String(TherMode[0]) + "]");
+      display.println("MAN:  [" + String(TherMode[1]) + "]");
+      display.println("AWAY: [" + String(TherMode[2]) + "]");
+      display.println("OFF:  [" + String(TherMode[3]) + "]");
 
-    else if (POSITION == -1) {
+
+
+    }
+
+
+    else if (POSITION == -2) {
       display.setCursor(0, 12);
       String ssid;
       int32_t rssi;
@@ -293,10 +408,14 @@ void loop() {
       display.setTextSize(1);
       display.println("time" + String(ActionIdle));
       display.println(posmem);
+      display.setTextSize(1);
+      display.print("SW1 " + String(digitalRead(SW1)));
+      display.println(", SW2 " + String(digitalRead(SW2)));
     }
 
     display.display();
     attachInterrupt(digitalPinToInterrupt(SW1), BUT1, FALLING);
+    PublishMQTT(0);
 
   }
 }
@@ -323,6 +442,8 @@ void ShowBat() {
   else {
     display.println(String((Voltage) * 76, 0) + "%");
   }
+
+
 
 }
 
@@ -399,4 +520,60 @@ IRAM_ATTR void BUT1() {
     encoder->setPosition(0);
   }
   detachInterrupt(digitalPinToInterrupt(SW1));
+}
+
+void MQTT_Connect() {
+  int8_t ret;
+  //digitalWrite(LEDDIAG, HIGH );
+
+  // Stop if already connected.
+  if (mqtt.connected()) {
+    return;
+  }
+
+  Serial.println("Připojuji se k MQTT serveru ");
+
+  uint8_t retries = 4;
+  mqtt.connect();
+  while ((ret = mqtt.connect()) != 0) { // connect will return 0 for connected
+    Serial.println(mqtt.connectErrorString(ret));
+    Serial.println("Nepodařilo se mi připojit k MQTT serveru. Zkusím to znovu za 5 sekund.");
+    mqtt.disconnect();
+    delay(5000);  // wait 5 seconds
+    retries--;
+    if (retries == 0) {
+      // basically die and wait for user to reset me
+      // digitalWrite(SensorPWR, LOW);
+      // digitalWrite(HeatPin, LOW);
+
+      ESP.restart();
+    }
+  }
+  Serial.println("Úspěšně připojeno k MQTT serveru!");
+}
+
+void PublishMQTT(int vari) {
+
+  MQTTcount++;
+  //Serial.println(MQTTcount);
+  if (MQTTcount > 25) {
+    MQTTcount = 0;
+    Serial.println(F("Probíhá odesílání dat na server"));
+    Serial.print(F("Probíhá odesílání teploty požadované:"));
+    if (! RequestedTemp.publish(requestedTEMP)) {
+      Serial.println(F(" Failed"));
+    } else {
+      Serial.println(F(" OK!"));
+    }
+    delay(10);
+
+    Serial.print(F("Probíhá odesílání teploty reálné:"));
+    if (! RealTemp.publish(mqtttemp)) {
+      Serial.println(F(" Failed"));
+    } else {
+      Serial.println(F(" OK!"));
+    }
+    
+
+  }
 }
