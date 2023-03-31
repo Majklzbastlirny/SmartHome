@@ -24,9 +24,9 @@ bool EditMode;
 WiFiClient client;
 //AsyncWebServer server(80);
 
-#define MQTT_BROKER_IP    "192.168.0.8"
+#define MQTT_BROKER_IP    "192.168.0.3"
 #define MQTT_BROKER_PORT  1883    //default port is 1883
-#define MQTT_USERNAME     "admin"
+#define MQTT_USERNAME     "Thermostat"
 #define MQTT_PASSWORD     "123456780"
 
 Adafruit_MQTT_Client mqtt(&client, MQTT_BROKER_IP, MQTT_BROKER_PORT, MQTT_USERNAME, MQTT_PASSWORD);

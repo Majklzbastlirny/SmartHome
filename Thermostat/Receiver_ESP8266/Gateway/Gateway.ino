@@ -117,9 +117,9 @@ byte NoStrengh[] = {
 };
 
 //MQTT
-#define MQTT_BROKER_IP "192.168.0.8"
+#define MQTT_BROKER_IP "192.168.0.3"
 #define MQTT_BROKER_PORT 1883  //default port is 1883
-#define MQTT_USERNAME "admin"
+#define MQTT_USERNAME "Thermostat"
 #define MQTT_PASSWORD "123456780"
 
 bool MQTTstate = 0;

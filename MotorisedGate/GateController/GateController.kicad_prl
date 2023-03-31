@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 37,
+    "active_layer": 31,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -41,6 +41,7 @@
       11,
       12,
       13,
+      14,
       15,
       16,
       17,
@@ -61,15 +62,13 @@
       33,
       34,
       35,
-      36,
-      39,
-      40
+      36
     ],
     "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "Receiver_ESP8266.kicad_prl",
+    "filename": "GateController.kicad_prl",
     "version": 3
   },
   "project": {
